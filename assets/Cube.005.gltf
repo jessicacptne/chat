@@ -1,0 +1,39 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "vr_landmarks" : [
+                    {
+                        "type" : 0,
+                        "base_scale" : 1.0
+                    }
+                ],
+                "skinify" : {
+                    "connect_mesh" : 0,
+                    "connect_parents" : 0,
+                    "generate_all" : 0,
+                    "thickness" : 0.800000011920929,
+                    "finger_thickness" : 0.25,
+                    "apply_mod" : 1,
+                    "parent_armature" : 1,
+                    "sub_level" : 1
+                },
+                "keentools_fb_settings" : {},
+                "virtucamera" : {},
+                "by_tool" : {},
+                "ssgi_tool" : {},
+                "print_3d" : {},
+                "scene_check_set" : {},
+                "b_export" : 1,
+                "export_path" : "C:\\Users\\julie\\OneDrive\\Documents\\JESSIK\\",
+                "s_output" : "exporting..."
+            },
+            "name" : "Scene"
+        }
+    ]
+}

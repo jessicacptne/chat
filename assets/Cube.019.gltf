@@ -1,0 +1,167 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "vr_landmarks" : [
+                    {
+                        "type" : 0,
+                        "base_scale" : 1.0
+                    }
+                ],
+                "skinify" : {
+                    "connect_mesh" : 0,
+                    "connect_parents" : 0,
+                    "generate_all" : 0,
+                    "thickness" : 0.800000011920929,
+                    "finger_thickness" : 0.25,
+                    "apply_mod" : 1,
+                    "parent_armature" : 1,
+                    "sub_level" : 1
+                },
+                "keentools_fb_settings" : {},
+                "virtucamera" : {},
+                "by_tool" : {},
+                "ssgi_tool" : {},
+                "print_3d" : {},
+                "scene_check_set" : {},
+                "b_export" : 1,
+                "export_path" : "C:\\Users\\julie\\OneDrive\\Documents\\JESSIK\\",
+                "s_output" : "exporting..."
+            },
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.019",
+            "rotation" : [
+                0.07194750010967255,
+                0,
+                0,
+                0.9974084496498108
+            ],
+            "scale" : [
+                -0.11697500944137573,
+                0.28985267877578735,
+                0.5035400390625
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.046",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.162029430270195,
+                    0.08650045841932297,
+                    0.05448029190301895,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.023",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.16750240325927734,
+                0.5911400318145752,
+                1.001089096069336
+            ],
+            "min" : [
+                -0.16750246286392212,
+                -0.5911399722099304,
+                -1.001089096069336
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 36,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 288,
+            "byteOffset" : 288
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 384,
+            "byteOffset" : 576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 960
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 1152
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1224,
+            "uri" : "data:application/octet-stream;base64,xIUrvtgFQj6wI4A/xIUrvtgFQj6wI4A/xIUrvtgFQj6wI4A/xIUrvvRUFz+toXI/xIUrvvRUFz+toXI/xIUrvvRUFz+toXI/xIUrvvNUF7+toXK/xIUrvvNUF7+toXK/xIUrvvNUF7+toXK/xIUrvtQFQr6wI4C/xIUrvtQFQr6wI4C/xIUrvtQFQr6wI4C/wIUrPtgFQj6wI4A/wIUrPtgFQj6wI4A/wIUrPtgFQj6wI4A/wIUrPvRUFz+toXI/wIUrPvRUFz+toXI/wIUrPvRUFz+toXI/wIUrPvNUF7+toXK/wIUrPvNUF7+toXK/wIUrPvNUF7+toXK/wIUrPtQFQr6wI4C/wIUrPtQFQr6wI4C/wIUrPtQFQr6wI4C/AACAvwAAAAAAAACAAAAAACalbb9mYL4+AAAAAMK5Bj5Oxn0/AACAvwAAAAAAAACAAAAAAMK5Bj5Oxn0/AAAAACalbT9mYL6+AACAvwAAAAAAAACAAAAAACalbb9mYL4+AAAAAMK5Br5Oxn2/AACAvwAAAAAAAACAAAAAAMK5Br5Oxn2/AAAAACalbT9mYL6+AAAAACalbb9mYL4+AAAAAMK5Bj5Oxn0/AACAPwAAAAAAAACAAAAAAMK5Bj5Oxn0/AAAAACalbT9mYL6+AACAPwAAAAAAAACAAAAAACalbb9mYL4+AAAAAMK5Br5Oxn2/AACAPwAAAAAAAACAAAAAAMK5Br5Oxn2/AAAAACalbT9mYL6+AACAPwAAAAAAAACAAAAAAE/GfT/FuQa+AACAPwAAgD8AAAAAAAAAgAAAgD8AAAAATsZ9P8K5Br4AAIA/AAAAAE3GfT/CuQa+AACAPwAAAABPxn0/w7kGvgAAgD8AAIC/AAAAAAAAAIAAAIA/AAAAAE3GfT/MuQa+AACAPwAAgD8AAAAAAAAAgAAAgD8AAAAAT8Z9P8O5Br4AAIA/AAAAAE/GfT/MuQa+AACAPwAAAABOxn0/wrkGvgAAgD8AAIC/AAAAAAAAAIAAAIA/AACAPwAAAAAAAACAAACAPwAAAABPxn0/w7kGvgAAgD8AAAAAT8Z9P8y5Br4AAIA/AAAAAE7GfT/CuQa+AACAPwAAgL8AAAAAAAAAgAAAgD8AAAAATcZ9P8y5Br4AAIA/AACAPwAAAAAAAACAAACAPwAAAABOxn0/wrkGvgAAgD8AAAAATcZ9P8K5Br4AAIA/AAAAAE/GfT/DuQa+AACAPwAAgL8AAAAAAAAAgAAAgD8AAAAAT8Z9P8W5Br4AAIA/AADAPgAAgD8AAAA+AACAPgAAwD4AAAAAAAAgPwAAgD8AACA/AAAAAAAAYD8AAIA+AADAPgAAQD8AAAA+AAAAPwAAwD4AAEA/AAAgPwAAQD8AACA/AABAPwAAYD8AAAA/AADAPgAAgD4AAMA+AACAPgAAwD4AAIA+AAAgPwAAgD4AACA/AACAPgAAID8AAIA+AADAPgAAAD8AAMA+AAAAPwAAwD4AAAA/AAAgPwAAAD8AACA/AAAAPwAAID8AAAA/AAADAAkAAAAJAAYACAAKABUACAAVABMAFAAXABEAFAARAA4ADQAPAAQADQAEAAIABwASAAwABwAMAAEAFgALAAUAFgAFABAA"
+        }
+    ]
+}
