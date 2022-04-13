@@ -97,7 +97,7 @@
                 <a-asset-item id="sol" src="./assets/sol.gltf"></a-asset-item>
                 <a-asset-item id="weapon.001" src="./assets/weapon.001.gltf"></a-asset-item>
                
-                <a-asset-item id="chat_fixe" src="./chat/chat_fixe.glb"></a-asset-item>
+                <a-asset-item id="chat_fixe" src="./chat_fixe.glb"></a-asset-item>
 
             </a-assets>
 
@@ -191,7 +191,7 @@
  
                 <a-entity id="camera" 
                     camera="near: 0.001" 
-                    position="0 1.7000000476837158 0" 
+                    position="-1 -0.5 -0.7" 
                     look-controls="pointerLockEnabled: true">
                      
                 </a-entity>
@@ -207,11 +207,11 @@
                 position="0 25 0"></a-entity>
 
                 <a-entity id= chat_fixe
-                position="-4 -2 -9"
-                  rotation="0 60 0"
-                  scale="0.03 0.03 0.03"
-                  gltf-model="#fox"
-                  animation-mixer="clip: Survey">
+                position="0.3 0.1 -1.8"
+                  rotation="0 45 0"
+                  scale="1 1 1"
+                  gltf-model="#chat_fixe"
+                >
         </a-entity>
 
             </a-entity>
