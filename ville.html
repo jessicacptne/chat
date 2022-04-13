@@ -6,7 +6,46 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     
-        
+        <script>
+            var actions = ["marche", "etend"];
+            var dataRun = "clip: chat_marche; crossFadeDuration: .3; repetitions : 10; timeScale: 1";
+            var dataWalk = "clip: chat_etend; crossFadeDuration: .3; repetitions : 10; timeScale: 1";
+            var current = actions[2];
+      
+            AFRAME.registerComponent('loaded', {
+              init: function () {
+                  var el = this.el;
+                  el.addEventListener('model-loaded', () => {
+                      console.log(">>> animation chargée : "+el.id);
+      
+                      });
+                  el.addEventListener('model-error', () => {
+                      console.log(">>> erreur chargement : "+el.id);
+                  });
+              }
+            });
+      
+            AFRAME.registerComponent('finished', {
+                update: function () {
+                    var el = this.el;
+                    el.addEventListener('animation-finished', () => {
+                        console.log(">>> animation terminée : "+el.id);
+                        el.removeAttribute("animation-mixer");
+      
+                        var newIndex = Math.floor(Math.random() * actions.length);
+                        console.log(">>> "+newIndex+"_"+ actions[newIndex]);
+                        switch (newIndex) {
+                            case 0: maj = dataRun; break;
+                            case 1: maj = dataWalk; break;
+                           
+                            // default:
+                        }
+      
+                        el.setAttribute("animation-mixer", maj );
+                    });
+                }
+            });
+          </script>
 
     </head>
     <body >
@@ -211,6 +250,9 @@
                   rotation="0 45 0"
                   scale="1 1 1"
                   gltf-model="#chat_fixe"
+                  animation-mixer="clip: etend; repetitions : 2; duration: 2; "
+                  loaded
+                  finished
                 >
         </a-entity>
 
