@@ -97,7 +97,8 @@
                 <a-asset-item id="sol" src="./assets/sol.gltf"></a-asset-item>
                 <a-asset-item id="weapon.001" src="./assets/weapon.001.gltf"></a-asset-item>
                
-                
+                <a-asset-item id="chat_fixe" src="./chat/chat_fixe.glb"></a-asset-item>
+
             </a-assets>
 
        
@@ -196,8 +197,22 @@
                 </a-entity>
 
 
-                <a-entity light="type: point; color: #ff7f00; intensity: 4; distance: 50; decay: 2" position="0 10 10">
+                <a-entity light="type: point; color: #ff7f00; intensity: 4; distance: 50; decay: 2" position="0 10 10" shadow cast :true; receive:true>
                 </a-entity>
+
+                <a-entity light=type: point;
+                color : #ffea32;
+                castShadow: true;
+                intensity : 1.5;
+                position="0 25 0"></a-entity>
+
+                <a-entity id= chat_fixe
+                position="-4 -2 -9"
+                  rotation="0 60 0"
+                  scale="0.03 0.03 0.03"
+                  gltf-model="#fox"
+                  animation-mixer="clip: Survey">
+        </a-entity>
 
             </a-entity>
 
