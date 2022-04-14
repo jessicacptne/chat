@@ -25,14 +25,14 @@
         debug-keyboard="key: e, r; event: enter-0, exit-1; target: #renard, #renard">
 
         <a-assets>
-            <a-asset-item id="chat" src="chat.glb"></a-asset-item>
-            <a-mixin id="marche" animation-mixer="clip: marche"></a-mixin>
-            <a-mixin id="calin" animation-mixer="clip: calin"></a-mixin>
-            <a-mixin id="etend" animation-mixer="clip: etend"></a-mixin>
+            <a-asset-item id="fox" src="chat.glb"></a-asset-item>
+            <a-mixin id="survey" animation-mixer="clip: marche"></a-mixin>
+            <a-mixin id="run" animation-mixer="clip: calin"></a-mixin>
+            <a-mixin id="walk" animation-mixer="clip: etend"></a-mixin>
         </a-assets>
 
-        <a-entity id="chat" position="-1 0 -2" scale="0.005 0.005 0.005" 
-                gltf-model="#chat" mixin="survey" test
+        <a-entity id="chat" position="-1 0 -2" scale="3 3 3" 
+                gltf-model="#fox" mixin="survey" test
                 proximity="trace: true; seuils: 1, 2"
                 event-set__enter-0="event: _event: enter-0; mixin: run;"
                 event-set__exit-1="event: _event: exit-1; mixin: walk;"            

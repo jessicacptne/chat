@@ -136,7 +136,12 @@
                 <a-asset-item id="sol" src="./assets/sol.gltf"></a-asset-item>
                 <a-asset-item id="weapon.001" src="./assets/weapon.001.gltf"></a-asset-item>
                
-                <a-asset-item id="chat_fixe" src="./chat_fixe.glb"></a-asset-item>
+                <a-assets>
+                    <a-asset-item id="fox" src="chat.glb"></a-asset-item>
+                    <a-mixin id="survey" animation-mixer="clip: marche"></a-mixin>
+                    <a-mixin id="run" animation-mixer="clip: calin"></a-mixin>
+                    <a-mixin id="walk" animation-mixer="clip: etend"></a-mixin>
+                </a-assets>
 
             </a-assets>
 
@@ -226,7 +231,17 @@
             <a-entity id="#sol" gltf-model="#sol"  scale="1 1 1" position="0.5487608909606934 0.09059929847717285 0.2895221710205078" visible="true" shadow="cast: false" ></a-entity>
             <a-entity id="#weapon.001" gltf-model="#weapon.001"  scale="1 1 1" position="-1.2772622108459473 0.12337646633386612 0.7172176837921143" visible="true" shadow="cast: false" ></a-entity>
 
-          
+            <a-entity id="chat" id= chat_fixe
+            position="0.3 0.1 -1.8"
+              rotation="0 45 0"
+              scale="1 1 1"
+            gltf-model="#fox" mixin="survey" test
+            proximity="trace: true; seuils: 1, 2"
+            event-set__enter-0="event: _event: enter-0; mixin: run;"
+            event-set__exit-1="event: _event: exit-1; mixin: walk;"            
+            event-set__enter-1="event: _event: enter-1; mixin: walk;" 
+            event-set__exit-2="event: _event: enter-2; mixin: survey;">
+    </a-entity>
  
                 <a-entity id="camera" 
                     camera="near: 0.001" 
@@ -245,15 +260,7 @@
                 intensity : 1.5;
                 position="0 25 0"></a-entity>
 
-                <a-entity id= chat_fixe
-                position="0.3 0.1 -1.8"
-                  rotation="0 45 0"
-                  scale="1 1 1"
-                  gltf-model="#chat_fixe"
-                  animation-mixer="clip: etend; repetitions : 2; duration: 2; "
-                  loaded
-                  finished
-                >
+    
         </a-entity>
 
             </a-entity>
